@@ -56,7 +56,7 @@ def main(argv):
 
     print ('INFO: Polling server %s' % arg_server)        
             
-    while (1):
+    while (True):
         time.sleep(1)
         wintext = GetWindowText(GetForegroundWindow())
                 
