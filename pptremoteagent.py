@@ -47,7 +47,6 @@ def main(argv):
     try:
         opts, args = getopt.getopt(argv, 's:')
     except getopt.GetoptError:
-        printhelp()
         sys.exit(2)
         
     for opt, arg in opts:
