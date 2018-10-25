@@ -41,7 +41,7 @@ def getcommand (p_server):
 
 def main(argv):
     #initialize variables for command line arguments
-    arg_server = '127.0.0.1:5000'
+    arg_server = '127.0.0.1:8080'
 
     #get command line arguments
     try:
