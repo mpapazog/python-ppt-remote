@@ -8,7 +8,7 @@ Usage:
 
 Notes:
   * By default pptremoteagent.py polls localhost:8080. To have it poll a different address, run:
-      '''pptremoteagent.py -s <serverip>:<serverport>'''
+      `pptremoteagent.py -s <serverip>:<serverport>`
  * You will need to install the following Python 3 modules:
       On server: flask
       On agent: keyboard, pywin32, requests
