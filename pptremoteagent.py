@@ -20,9 +20,9 @@ REQUESTS_READ_TIMEOUT       = 5
 COMMANDS = ['next', 'back', 'stop']
 
 def getcommand (p_server):
-    if True:
+    try:
         r = requests.get('http://' + p_server + '/command', timeout=(REQUESTS_CONNECT_TIMEOUT, REQUESTS_READ_TIMEOUT))
-    else:
+    except:
         print('WARNING: unable to access command server')
         return(None)
         
