@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PPT Remote</title>
+</head>
+<body>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type=text/javascript>
+        $(function() {
+          $('a#back').bind('click', function() {
+            $.getJSON('/setcmdback',
+                function(data) {
+              //do nothing
+            });
+            return false;
+          });
+        });
+        $(function() {
+          $('a#next').bind('click', function() {
+            $.getJSON('/setcmdnext',
+                function(data) {
+              //do nothing
+            });
+            return false;
+          });
+        });
+    </script>
+
+<div class='container' style="text-align: center">
+    <form style="display: inline-block"><table><tr>
+        <td><a href=# id=back><button class='btn btn-default' style="font-size:80px;height:300px;width:300px">Back</button></a></td><td style="width:50px"></td>
+        <td><a href=# id=next><button class='btn btn-default' style="font-size:80px;height:300px;width:300px">Next</button></a></td>
+    </tr></table></form>
+
+</div>
+</body>
+</html>
